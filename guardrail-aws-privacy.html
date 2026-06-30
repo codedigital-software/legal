@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardrail for AWS Console — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: #16325c; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+    h1 { font-size: 28px; } h2 { font-size: 19px; margin-top: 32px; }
+    code { background: #eef2f9; padding: 1px 5px; border-radius: 3px; }
+    .meta { color: #747b85; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Guardrail for AWS Console — Privacy Policy</h1>
+  <p class="meta">Last updated: 30 June 2026 &middot; Provided by Codedigital.</p>
+
+  <p>Guardrail for AWS Console is a browser extension that warns before destructive actions in
+  the AWS Management Console. It runs entirely on your device. It has <strong>no backend, no
+  account, and no tracking</strong> — it does not send any data to us or to anyone else, and it
+  does not read your AWS session cookie.</p>
+
+  <h2>What we store on your device</h2>
+  <ul>
+    <li><strong>Settings only</strong> — your AWS account classifications (which 12-digit account
+    IDs you mark as production or non-production), your guarded-action labels, and display
+    preferences. Stored locally in the browser (<code>chrome.storage</code>) and synced across
+    your own signed-in browser profile by the browser itself. We never receive it.</li>
+  </ul>
+
+  <h2>What we transmit</h2>
+  <p><strong>Nothing.</strong> The extension makes no network requests to any server we operate —
+  there is no license check, no analytics, and no telemetry. Your AWS resources, account contents,
+  credentials, and session cookie are never read for collection and never leave your browser; the
+  guardrail and banner operate purely on the page in front of you.</p>
+
+  <h2>How the AWS account ID is read</h2>
+  <p>To decide whether to guard the current account, the extension reads the visible 12-digit AWS
+  account ID from the Console page DOM (the same number AWS shows you in the top-right account
+  menu). It does <strong>not</strong> access your AWS session cookie, your IAM credentials, or any
+  AWS API. The ID stays on your device — it is matched against your locally-stored prod / safe
+  lists and used to label the on-screen banner.</p>
+
+  <h2>The “team version” link</h2>
+  <p>The popup contains a link to an external waitlist form. It opens in a new tab <em>only if you
+  click it</em>. Anything you choose to enter there is handled by that form’s provider under their
+  privacy policy — not by this extension.</p>
+
+  <h2>What we do NOT collect</h2>
+  <ul>
+    <li>No browsing history, page content, or analytics.</li>
+    <li>No personal or contact information.</li>
+    <li>No AWS resources, account contents, credentials, session cookies, IAM identities, or API data.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The extension requests only <code>storage</code> (to save your settings) and access to
+  <code>console.aws.amazon.com</code> and its subdomains (so it can show the environment banner
+  and the confirmation dialog on those pages). It does <strong>not</strong> request
+  <code>cookies</code>, <code>webRequest</code>, or any access to other sites, and it loads no
+  remote code — all code is bundled in the package and the source is on GitHub.</p>
+
+  <h2>Data retention &amp; your choices</h2>
+  <p>Local settings remain until you remove the extension or clear its storage. Because nothing is
+  stored on our side, there is nothing for us to delete. Questions:
+  <a href="mailto:cowijin@protonmail.com">cowijin@protonmail.com</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we will update the date above and post the revised version at this URL.</p>
+</body>
+</html>
